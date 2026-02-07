@@ -1,3 +1,4 @@
+// Customer data
 let customers = [
     {
         name: "Hilliary Duck",
@@ -15,4 +16,21 @@ let customers = [
         purchases: ["MacMini", "Magic Mouse"]
     }
 ];
+// Adds a new customer
+customers.push( {
+    name: "Donald Duck",
+    email: "DonaldDuck@Gmail.com",
+    purchases: ["MacBook", "Golden iPhone"]
+});
+// Removes the first customer
+
+customers.shift();
+
+// Updates the second customer's email and adds a new purchase
+
+customers[1].email = "Island1234@Gmail.com";
+
+customers[1].purchases.push("AirPods");
+
+console.log(customers);
 
