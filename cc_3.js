@@ -32,5 +32,11 @@ customers[1].email = "Island1234@Gmail.com";
 
 customers[1].purchases.push("AirPods");
 
-console.log(customers);
+customers.forEach(customer => {
+    console.log(`Name: ${customer.name}`);
+    console.log(`Email: ${customer.email}`);
+    console.log(`Purchases: ${customer.purchases.length}`);
+    console.log("-----------------------");
+});
 
+console.log(customers);
